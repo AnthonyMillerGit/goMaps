@@ -8,5 +8,7 @@ func main() {
 		"green": "#fu678",
 	}
 
+	colors["white"] = "#js7654"
+
 	fmt.Println(colors)
 }
