@@ -6,9 +6,14 @@ func main() {
 	colors := map[string]string{
 		"red":   "#ff0000",
 		"green": "#fu678",
+		"white": "#fffff",
 	}
 
-	colors["white"] = "#js7654"
+	printMap(colors)
+}
 
-	fmt.Println(colors)
+func printMap(c map[string]string) {
+	for color, hex := range c {
+		fmt.Println("Hex code for", color, "is", hex)
+	}
 }
